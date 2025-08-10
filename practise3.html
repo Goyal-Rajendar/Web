@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>basics 3</title>
+    </head>
+    <body>
+        <h1> Html Form</h1>
+        <form>
+            <div>  <!-- creares a new line. Another attribute 'span' doesn't create a new line(useful for inline text formatting)-->
+                <label for="username" > Enter your name</label>
+                <input id="username" type="text">
+            </div>
+            <br/>
+            <div>
+                <label for="password"> Enter your password</label>
+                <input id="password" minlength="1" maxlength="2" placeholder="enter your password">
+                <p> (the input won't be visible while texting)</p>
+                <br><br>
+            </div>
+            <div>
+                <label for="email"> email</label>
+                <input id="email" type="text"
+                       size="10"
+                       value="....@.com"
+                       name="rmail"
+                       value=""
+                     
+                       required    
+                      
+                       autocomplete="off"> <!--autocomplete decides whether to suggest previous entries or not-->
+            </div>                         <!--'required' makes the field mandatory to be fillded. Other attributes are 'readonly','disabled',pattern etc-->
+                                           <!-- name and value attribute are used to send data to the browser-->
+            <label for="range">Memory Range</label>
+            <input type="range" id="range" value="10">
+            <div>
+                <input type="radio" name="gender" id="male" checked value="male"><label for="male"  >male</label> <!-- 'value' attribute stores the input in the database-->
+                <input type="radio" name="gender" id="gender"><label for="gender" >female</label>                 <!--"checked attribute selects a default set radio button"-->
+            </div>
+            <div>
+                <label for="hobbies"> Hobbies :</label>
+                <input type="checkbox" id="hobbies" >Cricket <!-- 'value' attribute stores the input in the database-->
+                <input type="checkbox"  id="hobbies">Reading books <!-- 'name' attribute doesn't work in checkboxes-->
+            </div>
+            <label for="birthday"> DOB</label>
+            <input type="date" id="birthday"><br>
+            <label for="time">Favourite time</label>
+            <input type="time" id="time"><br>
+            <label for="primetime">Your prime</label>
+            <input type="month" id="primetime"> <!-- other attributes are realted to week, adding website url,-->
+            <div>
+                <fieldset>
+                    <legend>Personal Info</legend> <!-- provides boundary to the elements in it-->
+                    <div>
+                        <label for="goal">Goal</label>
+                        <input type="text" id="goal"><br>
+                        <label for="iq">IQ</label>
+                        <input type="text" id="iq">
+
+                    </div>
+                </fieldset>
+            </div>
+            <div>
+                <label for="complaint"> Enter your complaint</label>
+                <textarea type="textarea" id="complaint" cols="40" rows="5"></textarea>
+            </div>
+
+            <div>
+                <label for="number">enter your mobile no:</label>
+                <input type="number" id="number">
+                <p>(only numbers can't be given as input here)</p>
+                <br> <br>
+            </div>
+            <div>
+                <label for="pin">enter your pin code:</label>
+                <input type="number" id="pin" 
+                        max="50"
+                        min="0"
+                        value="10">
+                <p>(only numbers can't be given as input here)</p>
+                <br> <br>
+            </div>
+             <div>
+                <label for="country" value=""> Country</label>
+                <select id="country">
+                    <option value="uk">UK</option>
+                    <option value="italy">USA</option> 
+                    <option value="india">India</option>
+                    <option value="australia">Australia</option> 
+                </select>
+             </div>
+             <div>
+                <label for="country"> Country</label>
+                <input type="text" name="country" id="country" list="countries">
+                    <datalist id="countries">
+                         <option value="uk"> Uk</option>
+                         <option value="italy">USA</option> 
+                         <option value="india">India</option>
+                         <option value="australia">Australia</option>  
+                    </datalist>
+             </div>
+             <div>
+                <label for="file">Attach a file</label>
+                <input type="file" id="file">   
+             </div>
+             <input type="submit" value="submit"> <!-- or <button type="submit"> Submit</button>-->
+        </form>
+    </body>
+</html>

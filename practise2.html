@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Basics </title>
+        <style>
+          table{
+                text-align: center;  
+                border: 1px solid #000;
+                border-collapse: collapse; 
+                
+          }
+          h2{
+            font-weight: bold;
+          }
+          li{
+            text-transform: capitalize;
+          }
+          th{
+            border: 1px solid #000 ;
+            padding: 20px;             
+          } 
+          td{
+            padding: 2px;
+          }
+      
+        </style>  <!-- padding- gives free space to the header columns -->
+                  <!-- text allign- alligns the table contents at the centre of the cell-->
+
+    </head>
+    <body>
+        <h2>Unordered list</h2>
+        <ul style="list-style-type: square;" >
+            <li> cat</li>
+            <li>dog</li>
+            <li>goat</li>
+
+        </ul>
+        <hr>
+        <p>this is to reverse the list item numbering</p>
+        <ol reversed="true">
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+            <li>hello</li>
+        </ol>
+        <hr>
+        <h2>Ordered list</h2>
+        <ol  type="A">  <!-- we can also write as <ol style="list-style-type:upper-alpha;"-->
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+        <hr>
+        <p> "start" attribute in ordered list</p>
+        <ol  type="A" start="17"> 
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ol>
+        <hr>
+        <h2>Description list</h2>
+        <dl>
+            <dl> cat</dl>
+            <dd> makes meow sound</dd>
+            <dl>dog </dl>
+            <dd>makes bow sound</dd>
+            <dl>snake</dl>
+            <dd>makes sss sound</dd>        
+        </dl>
+        <hr>
+        <h2> Nested lists</h2>
+        <ul>
+            <li>fruit
+                <ol>
+                    <li>banana</li>
+                    <li>apple
+                        <ul type="square" >
+                            <li>greem</li>
+                            <li>red</li>
+                    </ul>
+                    </li>
+                    <li> pears</li>
+                </ol>
+            </li>
+            <li>vegatables</li>
+            <li>meat</li>
+        </ul>
+        <hr>
+        <p>this is to how to create a horizontol menu bar</p>
+        <ul type="none" style="display:flex; gap: 15px"  >
+            <li>Home</li>  <!-- we can also add links these list elements-->
+            <li>About</li>
+            <li>Service</li>
+            <li>Contact</li>
+        </ul>  
+        <hr>
+        <p>this is to how to create a table</p>
+        <table border="3px " >
+            <caption>
+                <!--caption gives a name to the table visible on the webpage-->
+                This a caption tag in table
+            </caption>
+            <colgroup>
+                <col style="background-color: blue;">
+                <!-- colgroup helps to extra features to our webpage-->
+                <col span="2" style="background-color: orange;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>username</th>
+                    <th> password</th>
+                    <th> address</th>
+                </tr>    
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rajendar</td>
+                    <td>123</td>
+                    <td>Gandeed</td>
+                </tr>
+                <tr>
+                    <td>vinod</td>
+                    <td>456</td>
+                    <td> India</td>
+                </tr>
+                <tr>
+                    <td>Rahul</td>
+                    <td>789</td>
+                    <td>Mumbai</td>
+                </tr>
+                <tr>
+                    <td colspan="2"> table ended</td>
+                </tr>
+            </tbody>
+        </table > 
+        <hr>
+        <p> this is how to add another website in a page</p>
+        <iframe src="https://www.wikipedia.org/"
+                 title="leetcode"
+                 frameborder="100px"
+                 width="600"
+                 height="600"
+                 allowfullscreen
+                 >
+        </iframe>
+        <pre> 
+             
+
+
+
+        </pre>
+        <p>this is how to add an audio file in a webpage</p>
+        <audio controls
+                autoplay
+                muted
+                loop>
+            <source src="animal.mp3" type="audio/mp3">
+        </audio>
+        <hr>
+        <p>this is how to add a video to a webpage</p>
+        <video  controls
+                autoplay
+                poster="affidavit_11zon.jpg" 
+                loop
+                height="200"
+                width="300">
+            <source src="Chernobyl_2019_S01E01_1080p_HQ_HDRip_Tamil_+_Telugu_+_Hindi_+_Kannada.mkv" type="video/mp4">
+            <!-- we can add another video src here in the case first one doesnt work -->
+        </video>
+
+        </video>
+
+     </body>
+</html>
